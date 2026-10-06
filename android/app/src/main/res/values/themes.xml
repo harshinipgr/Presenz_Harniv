@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base theme (neutral navy) used by Welcome / Login chooser -->
+    <style name="Base.SmartAttendance" parent="Theme.Material3.Light.NoActionBar">
+        <item name="colorPrimary">@color/neutral_primary</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorPrimaryContainer">@color/neutral_container</item>
+        <item name="colorOnPrimaryContainer">@color/neutral_primary</item>
+        <item name="colorSecondary">@color/neutral_primary</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSecondaryContainer">@color/neutral_container</item>
+        <item name="colorOnSecondaryContainer">@color/neutral_primary</item>
+        <item name="android:colorBackground">@color/neutral_bg</item>
+        <item name="colorSurface">@color/white</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="colorOnSurfaceVariant">@color/text_secondary</item>
+        <item name="colorOutline">#9AA4B2</item>
+        <item name="materialCardViewStyle">@style/Widget.App.Card</item>
+        <item name="android:windowBackground">@color/neutral_bg</item>
+    </style>
+
+    <style name="Theme.SmartAttendance" parent="Base.SmartAttendance" />
+
+    <style name="Theme.SmartAttendance.Splash" parent="Base.SmartAttendance">
+        <item name="android:windowBackground">@color/neutral_primary</item>
+    </style>
+
+    <!-- STUDENT theme: blue -->
+    <style name="Theme.SmartAttendance.Student" parent="Base.SmartAttendance">
+        <item name="colorPrimary">@color/student_primary</item>
+        <item name="colorPrimaryContainer">@color/student_container</item>
+        <item name="colorOnPrimaryContainer">@color/student_on_container</item>
+        <item name="colorSecondary">@color/student_primary</item>
+        <item name="colorSecondaryContainer">@color/student_container</item>
+        <item name="colorOnSecondaryContainer">@color/student_on_container</item>
+        <item name="android:colorBackground">@color/student_bg</item>
+        <item name="android:windowBackground">@color/student_bg</item>
+    </style>
+
+    <!-- FACULTY theme: emerald green -->
+    <style name="Theme.SmartAttendance.Faculty" parent="Base.SmartAttendance">
+        <item name="colorPrimary">@color/faculty_primary</item>
+        <item name="colorPrimaryContainer">@color/faculty_container</item>
+        <item name="colorOnPrimaryContainer">@color/faculty_on_container</item>
+        <item name="colorSecondary">@color/faculty_primary</item>
+        <item name="colorSecondaryContainer">@color/faculty_container</item>
+        <item name="colorOnSecondaryContainer">@color/faculty_on_container</item>
+        <item name="android:colorBackground">@color/faculty_bg</item>
+        <item name="android:windowBackground">@color/faculty_bg</item>
+    </style>
+
+    <!-- Widgets -->
+    <style name="Widget.App.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardBackgroundColor">@color/white</item>
+    </style>
+
+    <style name="App.BigButton" parent="Widget.Material3.Button">
+        <item name="android:minHeight">58dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="cornerRadius">14dp</item>
+    </style>
+
+    <style name="App.OutlineButton" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:minHeight">50dp</item>
+        <item name="cornerRadius">12dp</item>
+    </style>
+
+    <style name="App.Input" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="App.Dropdown" parent="Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+        <item name="android:layout_marginTop">12dp</item>
+    </style>
+
+    <style name="App.SectionTitle" parent="">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:letterSpacing">0.06</item>
+        <item name="android:textColor">?attr/colorPrimary</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+    <style name="App.Badge" parent="">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingStart">10dp</item>
+        <item name="android:paddingEnd">10dp</item>
+        <item name="android:paddingTop">4dp</item>
+        <item name="android:paddingBottom">4dp</item>
+        <item name="android:background">@drawable/bg_badge</item>
+    </style>
+</resources>

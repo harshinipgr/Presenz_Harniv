@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Neutral (welcome / login chooser) -->
+    <color name="neutral_primary">#27365A</color>
+    <color name="neutral_container">#DDE3F0</color>
+    <color name="neutral_bg">#F4F5F8</color>
+
+    <!-- Student theme: BLUE -->
+    <color name="student_primary">#1E5AA8</color>
+    <color name="student_primary_dark">#133F7A</color>
+    <color name="student_container">#DCE8FA</color>
+    <color name="student_on_container">#0D2E5C</color>
+    <color name="student_bg">#F2F6FC</color>
+
+    <!-- Faculty theme: EMERALD GREEN -->
+    <color name="faculty_primary">#0F7B5F</color>
+    <color name="faculty_primary_dark">#0A5642</color>
+    <color name="faculty_container">#D3EFE4</color>
+    <color name="faculty_on_container">#063D2F</color>
+    <color name="faculty_bg">#F1F7F4</color>
+
+    <!-- Status colours -->
+    <color name="status_present">#1B8A4B</color>
+    <color name="status_absent">#C62828</color>
+    <color name="status_flagged">#B26A00</color>
+    <color name="status_neutral">#6B7785</color>
+    <color name="status_info">#1E5AA8</color>
+
+    <color name="text_primary">#1B1F24</color>
+    <color name="text_secondary">#5F6B7A</color>
+    <color name="divider">#E3E7EE</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="camera_bg">#101418</color>
+    <color name="ic_launcher_bg">#1E5AA8</color>
+</resources>

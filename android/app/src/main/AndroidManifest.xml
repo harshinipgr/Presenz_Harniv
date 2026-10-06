@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.any" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SmartAttendance"
+        android:usesCleartextTraffic="true">
+
+        <!-- Launcher: decides where to go (one-time login is remembered) -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.SmartAttendance.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Common screens -->
+        <activity android:name=".WelcomeActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".LoginActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".StudentSignupActivity" android:theme="@style/Theme.SmartAttendance.Student" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".FacultySignupActivity" android:theme="@style/Theme.SmartAttendance.Faculty" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".FaceCaptureActivity" android:theme="@style/Theme.SmartAttendance.Student" android:screenOrientation="portrait" />
+        <activity android:name=".QrScanActivity" android:theme="@style/Theme.SmartAttendance.Student" android:screenOrientation="portrait" />
+
+        <!-- Student (blue theme) -->
+        <activity android:name=".StudentHomeActivity" android:theme="@style/Theme.SmartAttendance.Student" />
+        <activity android:name=".MarkAttendanceActivity" android:theme="@style/Theme.SmartAttendance.Student" />
+
+        <!-- Faculty (green theme) -->
+        <activity android:name=".FacultyHomeActivity" android:theme="@style/Theme.SmartAttendance.Faculty" />
+        <activity android:name=".SessionActivity" android:theme="@style/Theme.SmartAttendance.Faculty" />
+        <activity android:name=".ClassroomsActivity" android:theme="@style/Theme.SmartAttendance.Faculty" />
+        <activity android:name=".ClassroomEditActivity" android:theme="@style/Theme.SmartAttendance.Faculty" android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".RecordsActivity" android:theme="@style/Theme.SmartAttendance.Faculty" />
+        <activity android:name=".StudentsActivity" android:theme="@style/Theme.SmartAttendance.Faculty" />
+        <activity android:name=".FlagsActivity" android:theme="@style/Theme.SmartAttendance.Faculty" />
+        <activity android:name=".ExportActivity" android:theme="@style/Theme.SmartAttendance.Faculty" />
+    </application>
+</manifest>

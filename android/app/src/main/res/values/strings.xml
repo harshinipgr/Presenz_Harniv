@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Presenz</string>
+    <string name="tagline">Multi-factor attendance: Wi-Fi + GPS + dynamic QR + face</string>
+    <string name="refresh">Refresh</string>
+    <string name="logout">Log out</string>
+</resources>
